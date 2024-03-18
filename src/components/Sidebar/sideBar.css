@@ -1,0 +1,231 @@
+/* sidebar */
+:root{
+    --secondary: rgb(108,19,13);
+    --sidebar-main-select:  rgb(75,11,7);
+    --sidebar-sub-select: rgb(30,6,6);
+    --sidebar-txt-color:#fff;
+    --sidebar-txt-hover:#fff;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background-color: var(--secondary);
+}
+
+.sidebar-content {
+    flex-grow: 1;
+}
+
+.logout-button {
+    margin-top: auto;
+}
+
+.sidebar-logo{
+    margin-bottom: 2.5rem;
+}
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -300px;
+    }
+}
+
+.sidebar::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+   background-color: #aab7cf;
+}
+
+
+
+@media (min-width: 1200px){
+    #main,
+    #footer {
+        margin-left: 300px;
+    }
+}
+
+@media (min-width: 1199px){
+    .toggle-sidebar .sidebar{
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px){
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer{
+        margin-left: 0;
+    }
+    .toggle-sidebar .sidebar{
+        left: -300px;
+    }
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar-nav .nav-link.active {
+    background-color: var(--sidebar-main-select); 
+}
+.sidebar-nav .nav-item.active {
+    background-color: var(--sidebar-main-select); 
+}
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 5px;
+    /* background-color: var(--sidebar-main-select); */
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.sidebar-nav .nav-heading {
+    
+    font-size: 11px;
+    text-transform: uppercase;
+    /* color: #899bbd; */
+    font-weight: 500;
+    margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+   
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+   font-weight: 500;
+   color: var(--sidebar-txt-color);
+   transition: 0.3;
+   /* background: var(--sidebar-main-select); */
+   padding: 10px 15px;
+   border-radius: 10px;
+
+}
+
+.sidebar-nav .nav-link i {
+    
+    font-size: 16px;
+    margin-right: 10px;
+    color: var(--sidebar-txt-color);
+ }
+
+
+.sidebar-nav .nav-link.collapsed {
+    background: transparent;
+    color: var(--sidebar-txt-color);
+ }
+
+
+.sidebar-nav .nav-link.collapsed i {
+    color: var(--sidebar-txt-color);
+ }
+
+ .sidebar-nav .nav-link:hover {
+    background: var(--sidebar-main-select);
+    color: var(--sidebar-txt-color);
+ }
+
+ .sidebar-nav .nav-link:hover i {
+    color: var(--sidebar-txt-color);
+ }
+
+ .sidebar-nav .nav-link .bi-chevron-down { 
+    margin-right: 0;
+    transition: transform 0.2s ease-in-out;
+ }
+
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down { 
+    transition: rotate(180deg);
+ }
+
+.sidebar-nav .nav-content { 
+    /* padding: 5px 0 0px 0; */
+    padding-left: 5px;
+    list-style: none;
+    margin: 0 5px;
+    border-radius: 10px;
+ }
+
+ .sidebar-nav .nav-content li {
+    margin: 8px 0;
+  }
+
+.sidebar-nav .nav-content a { 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--sidebar-txt-color);
+    transition:0.3;
+    padding:10px 0 10px 40px;
+    transition: 0.3s;
+ }
+
+ .sidebar-nav .nav-content a i {
+    border-radius: 10px;
+    font-size: 6px;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+ }
+ /* .sidebar-nav .nav-content:hover{
+    margin: 0 20px;
+ } */
+.sidebar-nav .nav-content a:hover,
+.sidebar-nav .nav-content a.active {
+    color: var(--sidebar-txt-color);
+    background-color: var(--sidebar-sub-select);
+    
+
+}
+
+.nav-content {
+    transition: height 0.3s ease; /* Add a transition effect for height */
+  }
+  
+  .collapse.show {
+    height: auto !important; /* Override Bootstrap's default height for smooth opening */
+  }
+
+/* .sidebar-nav .nav-content a.active i {
+    color: #4154f1;
+    
+} */
+
+.logout-button{
+    width: 100%;
+}
+
+.logout-button button {
+    width: 100%; 
+    text-align: left;
+    justify-content: flex-start;
+    background-color: rgb(145,35,28);
+    border-color: rgb(145,35,28);
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+}

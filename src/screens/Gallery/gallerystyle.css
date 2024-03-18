@@ -1,0 +1,126 @@
+/* file ' */
+/* CSS for file upload container */
+.file-upload-container {
+  width: 100%;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+/* CSS for file drop area */
+.file-drop-area {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='11' ry='11' stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-dasharray='18%2c 8' stroke-dashoffset='45' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.file-drop-area:hover {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='11' ry='11' stroke='rgba(255,255,255,1)' stroke-width='2' stroke-dasharray='18%2c 8' stroke-dashoffset='45' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 11px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* CSS for file input */
+.file-input {
+  display: none;
+  /* Hide the file input */
+}
+
+/* CSS for browse label */
+.browse-label {
+  cursor: pointer;
+}
+
+/* CSS for selected file */
+.selected-file {
+  background-color: rgb(33,33,33);
+  padding: 3px;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* margin-bottom: 400px;  */
+}
+
+
+/* Selected file display in UI */
+
+.selected-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  /* background-color: #f0f0f0; */
+}
+
+.selected-file {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.selected-file:hover {
+  transform: scale(1.05);
+}
+
+/* Additional styling for image overlay */
+.selected-file-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.selected-file:hover .selected-file-overlay {
+  opacity: 1;
+}
+
+
+/* Search section */
+
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%; /* Fills the available space in the container */
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: small;
+  /* margin-right: 10px; */
+  
+}
+
+.sort-button {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: small;
+}
+
+/* Add hover effect */
+.sort-button:hover {
+  background-color: #e0e0e0;
+}

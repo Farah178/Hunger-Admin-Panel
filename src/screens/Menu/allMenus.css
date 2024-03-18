@@ -1,0 +1,83 @@
+/* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: orangered;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover{
+    color:gray
+} */
+
+.nav .nav-item button {
+    background-color: transparent;
+    color:white;
+  }
+  .nav .nav-item button.active {
+      background-color: transparent;
+      color: rgb(212,179,74);
+    }
+    .nav .nav-item button.active::after {
+      content: "";
+      color: rgb(212,179,74);
+      border-bottom: 4px solid rgb(212,179,74);
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      border-radius: 5px;
+    }
+  
+    .Tab-parent{
+      position: relative;
+    }
+  
+    .Tab-right{
+      position: absolute;
+      top:0;
+      right: 12px;
+    }
+
+    /* Allmenus css */
+    .input-label {
+      position: absolute;
+      left: 10px;
+      top: 50%; /* Adjust as needed */
+      transform: translateY(-50%);
+      transition: top 0.3s ease, font-size 0.3s ease;
+      pointer-events: none;
+    }
+    
+    .input-field {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ced4da;
+    }
+    
+    .input-field:focus {
+      border-color: #007bff;
+    }
+    
+    .input-field:focus + .input-label,
+    .input-field:not(:placeholder-shown) + .input-label {
+      top: 10px; /* Move the label up when input is focused or placeholder is not shown */
+      font-size: 12px; /* Reduce font size when label moves up */
+    }
+    
+    .menu-title {
+      transition: margin-bottom 0.3s ease;
+    }
+    
+    .input-field:focus ~ .menu-title {
+      margin-bottom: 0; /* Move the title up when input is focused */
+    }
+    
+    /* search */
+    .bssearch{
+      width: "20px"
+    }
+
+

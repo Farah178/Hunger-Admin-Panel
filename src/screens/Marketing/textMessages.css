@@ -1,0 +1,79 @@
+/* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: orangered;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover{
+    color:gray
+} */
+
+.nav .nav-item button {
+  background-color: transparent;
+  color:white;
+}
+.nav .nav-item button.active {
+    background-color: transparent;
+    color: rgb(223,182,81);
+  }
+  .nav .nav-item button.active::after {
+    content: "";
+    color: rgb(212,179,74);
+    border-bottom: 4px solid rgb(212,179,74);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 5px;
+  }
+
+  .Tab-parent{
+    position: relative;
+  }
+
+  .Tab-right{
+    position: absolute;
+    top:0;
+    right: 12px;
+  }
+
+
+  .pagination-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-wrap > button {
+    margin-left: 5px;
+    background-color: var(--card-dark-shade);
+    padding: 5px 10px;
+  }
+  
+  .pagination-wrap > span {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  .table-row-style{
+   background-color: transparent !important;
+   border: none !important;
+   color: white !important;
+   font-weight: 200;
+   
+  }
+
+  .table-column-header-style{
+    background-color: rgb(38,38,38) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 200;
+  }
+
+
+  /* calender */
+  

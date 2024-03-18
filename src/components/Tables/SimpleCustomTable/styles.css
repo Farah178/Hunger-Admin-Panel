@@ -1,0 +1,42 @@
+/* toggle */
+
+#switch { 
+    display: none; /* Hide the actual checkbox */
+  }
+  
+  label1 {
+    cursor: pointer;
+    text-indent: -2000px;
+    width: 40px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background: grey;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  label1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px; /* Adjust the left position to center the toggle */
+    width: 16px; /* Adjust the width of the toggle circle */
+    height: 16px; /* Adjust the height of the toggle circle */
+    background: white;
+    border-radius: 50%;
+    transition: left 0.4s; /* Change transition property to left */
+  }
+  
+  input:checked + label1 {
+    background: green;
+  }
+  
+  input:checked + label1:after {
+    left: calc(100% - 18px); /* Adjust the position to the right when checked */
+  }
+
+  .custom-form-control::placeholder {
+    color: #FFFFFF; /* Change the placeholder color to white */
+}
+  

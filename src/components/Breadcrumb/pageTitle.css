@@ -1,0 +1,23 @@
+/* Page Title */
+
+
+.pagetitle h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.breadcrumb-icon{
+    color: var(--primary-text-color-light);
+}
+
+.breadcrumb{
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+.heading{
+    display: flex;
+}
+.menu-nav{
+    margin-bottom: 2rem;
+}

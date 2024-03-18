@@ -1,0 +1,229 @@
+.small-card {
+    width: 100%; /* Adjust card width as needed */
+    max-width: 300px; /* Set max-width to limit the size of the card */
+    margin: 0 auto; /* Center align cards */
+  }
+  .Card1:hover .heading,
+  .Card1.clicked .heading {
+      color:  yellow !important; /* Change text color on hover and when clicked */
+  }
+  
+  .Card1:hover img,
+  .Card1.clicked img {
+      filter: invert(100%); /* Invert colors of the logo on hover and when clicked */
+  }
+
+  /* setting my profile */
+
+  /* styles.css */
+.icon-logo {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(122, 122, 122); /* Set border color */
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+ 
+  
+  
+  .update-btn {
+    /* Add styles for update button */
+   
+    /* background-color: rgb(180,49,45); */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+    padding: 10px 20px; /* Increase padding to adjust button size */
+    margin-top: 10px;
+  }
+  
+  .card-content {
+    /* Add styles for the container div */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    /* background-color: #f8f9fa; */
+  }
+  
+
+/* Input field ====== */
+
+.box {
+  background-color: white;
+  padding: 1.5rem;
+  max-width: fit-content;
+  width: 100%;
+  padding-top: 0.75rem;
+  border-radius: 0.3rem;
+}
+
+.box h2 {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--primary);
+}
+
+.input__wrapper {
+  position: relative;
+  padding: 1rem 0 0;
+  
+}
+
+.input__field {
+  border: 1px solid var(--primary-text-color);
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  color: var(--text);
+  padding: 0.5rem;
+  padding-right: 2rem;
+  background: transparent;
+  transition: border-color 0.2s;
+  /* opacity: .5 */
+  border-color: rgba(255,255,255,0.2);
+  width: 50%;
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__field:placeholder-shown ~ .input__label {
+  font-size: 1rem;
+  cursor: text;
+  color: var(--primary-text-color-light);
+  top: 1.5rem;
+  opacity: 1 !important
+}
+
+
+label,
+.input__field:focus ~ .input__label {
+  position: absolute;
+  top: 0.375rem;
+  padding: 0 0.25rem;
+  background-color: var(--card-dark-shade);
+  display: block;
+  font-size: 0.875rem;
+  left: 0.5rem;
+  color: var(--primary-text-color-light);
+  transition: 0.3s;
+  opacity: 1
+}
+
+.input__field:focus ~ .input__label {
+  color: var(--second);
+}
+
+.input__field:focus {
+  border: 0.5px solid var(--second);
+  outline: 0.5px solid var(--second);
+}
+
+.input__icon {
+  position: absolute;
+  right: -0.625rem;
+  bottom: -0.625rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  transform: translate(-50%,-50%);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+
+/* UpdatedProfileButton */
+
+.icon {
+  cursor: pointer; /* Add pointer cursor to indicate clickability */
+}
+
+/* Hover effect */
+.icon:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Additional styles for the profile picture upload component */
+.profile-picture-upload {
+  /* Add any additional styles for the component container */
+  /* border: 1px solid rgba(255,255,255); */
+}
+
+
+
+.custom-input-group-text {
+  background-color: transparent; /* Remove the white background color */
+  border: none; /* Remove any border */
+  padding: 0; /* Remove padding */
+}
+
+.custom-chevron-icon {
+  color: rgb(140,140,140); /* Set color of the arrow icon */
+  font-size: 1rem; /* Adjust the size of the icon */
+}
+
+
+/* google map*/
+
+.google-map-container {
+ 
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+
+
+
+.circle {
+  width: 35px;
+  height:32px;
+  border-radius: 80px;
+  margin-right: 1.5rem;
+  /* padding: 10px, 50px, 10px, 20px; */
+  background-color: #E5B638;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  /* gap: 2px; */
+  margin-top: 10px;
+}
+
+.card-content1{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-side{
+  display: flex;
+  gap: 20px;
+}
+
+.card-content2{
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+  

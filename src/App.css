@@ -1,38 +1,159 @@
-.App {
+@import url("http://fonts.googleapis.com/css?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@100;300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General */
+
+:root{
+  scroll-behavior: smooth;
+  --primary: #C21F24;
+  --second:#E5B638;
+  --bgColor:rgb(45,45,45);
+  --primary-text-color:rgb(255,255,255);
+  --primary-text-color-light:rgb(123,123,123);
+  --card-dark-shade:rgb(50,50,50);
+  --text:rgb(255,255,255);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #840E12;
+  background: var(--bgColor);
+}
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--second);
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: "Poppins", sans-serif;}
+
+
+
+/* Dropdown menus */
+/* default bootstrap stylinh */
+
+.dropdown-menu {
+  border-radius: 4px;
+  padding: 10px 0;
+  -webkit-animation-name: dropdown-animate;
+  animation-name: dropdown-animate;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgba(82,63,105,0.2);
+}
+
+.dropdown-menu .dropdown-header 
+.dropdown-menu .dropdown-footer {
   text-align: center;
+  font-size: 15px;
+  padding: 10px 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown-menu .dropdown-footer a {
+  color: #444444;
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.dropdown-menu .dropdown-footer a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-divider {
+  color: #a5c5fe;
+  margin: 0;
+}
+
+.dropdown-menu .dropdown-item {
+ font-size: 14px;
+ padding: 10px 15px;
+ transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item i {
+  font-size: 18px;
+  margin-right: 10px;
+  line-height: 0;
+ }
+
+ .dropdown-menu .dropdown-item:hover {
+  background-color: #f6f9ff;
+ }
+
+ @media (min-width : 768px){
+  .dropdown-menu-arrow::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-top: 1px solid #eaedf1;
+    border-left: 1px solid #eaedf1;
   }
-}
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ @-webkit-keyframes dropdown-animate {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
+  0% {
+    opacity: 0;
+  }
+ }
+
+ @keyframes dropdown-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+ }
+
+
+.dot{
+  color: var(--primary-text-color);
+}
+
+.pagination-button{
+  background-color: transparent !important;
+  color: var(--primary-text-color);
+  /* border-color: #E5B638 !important; */
+  border-color: transparent;
+  border-radius: 0.3rem;
+  /* border: none; */
+}
+
+.pagination-arrow-button{
+  color: var(--primary-text-color);
+  /* border-color: #E5B638 !important; */
+  border-color: transparent;
+  border-radius: 0.3rem;
+  /* border: none; */
+}
+
+.error-message{
+  color: var(--primary);
 }

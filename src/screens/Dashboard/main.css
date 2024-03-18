@@ -1,0 +1,113 @@
+/* Main.css */
+
+#main {
+    margin-top: 10px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+    
+}
+
+@media (min-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+.span {
+    color: var(--primary-text-color);
+}
+/* small card css */
+.small-card {
+    width: 300px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .card-custom {
+    background-color: rgb(56,56,56); /* Your desired background color */
+  }
+  .dash-sub-heading{
+    color: var(--primary-text-color);
+    margin: 1rem 0px;
+    font-size: 18px;
+  }
+
+  .Card{
+    min-height: 150px;
+    background-color: var(--card-dark-shade);
+    border-radius: 10px;
+    border-color: var(--card-dark-shade);
+  }
+
+  .card-icon{
+    background-color: rgb(178,220,181);
+    padding: 10px;
+    border-radius: 3px;
+    width: fit-content;
+    font-size: 1.3rem;
+    text-align: center;
+    height: 2.8rem;
+  }
+
+
+
+
+.card-icon i {
+  display: block; /* Make the icon display as a block element */
+}
+
+.card-parent{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 25px;
+   margin-bottom: 5px;
+}
+.card-right{
+    line-height:1.3rem;
+    margin-left: .5rem;
+}
+.card-super-parent{
+    padding-bottom: 20px;
+}
+.card-right-number{
+    font-size: 20px;
+    margin-top: 1px;
+    color: var(--primary-text-color);
+}
+.car-right-txt{
+    color: var(--primary-text-color-light);
+    font-size: 14px;
+}
+
+.card-parent-revenue{
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  /* height: 100%; */
+  /* margin: 30px 0; */
+  padding: 50px;
+}
+
+
+
+.Card1 {
+    /* height: 170px; */
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: var(--primary-text-color-light);
+}
+
+.card-parent-revenue .heading {
+    font-size: 14px;
+    color: var(--primary-text-color-light);
+}
+.card-parent-revenue .number {
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+.card-parent-revenue .response {
+    font-size: 14px;
+    color: rgb(102,224,72);
+}
